@@ -37,4 +37,6 @@ app.get('/test', function (req, res, next) {
 
 });
 
-app.listen(process.env.PORT || 8080, 'localhost');
+var port = process.env.PORT || 3000;
+
+app.listen(port);
