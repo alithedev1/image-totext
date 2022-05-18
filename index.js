@@ -29,4 +29,12 @@ app.post('/', async function (req, res, next) {
 
 });
 
+app.get('/test', function (req, res, next) {
+
+  res.send({
+    Response : 'Working fine'
+  })
+
+});
+
 app.listen(process.env.PORT || 8080, 'localhost');
